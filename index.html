@@ -1,210 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!--[if lte IE 9]><meta http-equiv="refresh" content="0;url=/ie.html"><![endif]-->
 
-<head>
-    <meta charset="UTF-8">
-    <title>sheldon简历</title>
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
-    <script src="static/js/script.js"></script>
-</head>
+    <title>谢尔顿的博客</title>
+    <meta name="description" content="">
 
-<body>
-    <div class="container" id="cv">
-        <div class="side">
-            <div class="me">
-                <div class="code info-unit">
-                <hr>
-                <div class="head">
-                    <img src="static/image/head.jpg" alt="">
-                </div>
-            </div>
-                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
-                    <h3>请输入图片URL地址：</h3>
-                    <br/>
-                    <input type="text" id="avatar-url">
-                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-                </div>
-                <h1 id="username" >sheldon</h1>
-                <h4 id="persona-tag" >Python / C/C++/C# / Java</h4>
-            </div>
-            <div class="profile info-unit">
-                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
-                <hr>
-                <ul class="info-list">
-                    <li>
-                        <label class="left-label">姓名</label><span class="label-value">sheldon</span></li>
-                    <li>
-                        <label class="left-label">学历</label><span class="label-value">硕士</span></li>
-                    <li>
-                        <label class="left-label">毕业院校</label><span class="label-value">南京航空航天大学</span></li>
-                    <li>
-                        <label class="left-label">毕业年份</label><span class="label-value">2013</span></li>
-                </ul>
-            </div>
-            <div class="contact info-unit">
-                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
-                <hr>
-                <ul class="info-list">
-                    <li>
-                        <label class="left-label">邮箱</label><span class="label-value">lovexeagle@163.com</span></li>
-                    <li>
-                        <label class="left-label">个人主页</label><span class="label-value">https://zhangguoquan.github.io/</span></li>
-                    <li>
-                        <label class="left-label">Github</label><span class="label-value">github.com/zhangguoquan</span></li>
-                </ul>
-            </div>
-            <div class="skill info-unit">
-                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
-                <hr>
-                <ul class="progress-list">
-                    <li>
-                        <label class="left-label">Python</label>
-                        <progress value="60" max="100"></progress>
-                    </li>
-                    <li>
-                        <label class="left-label">C/C++/C#</label>
-                        <progress value="70" max="100"></progress>
-                    </li>
-                    <li>
-                        <label class="left-label">Java</label>
-                        <progress value="60" max="100"></progress>
-                    </li>
-                </ul>
-            </div>
-            <div class="stack info-unit">
-                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">工具</span></h2>
-                <hr>
-                <ul class="stack-list">
-                    <li>
-                        <label class="left-label">专业</label><span class="label-value">Flsim、Stage、X-plane、FSX、FlightGear、Vxworks</span></li>
-                    </li>
-                    <li>
-                        <label class="left-label">平台</label><span class="label-value">Visual Studio、Android Studio、Anaconda、wireshark</span></li>
-                    </li>
-                    <li>
-                        <label class="left-label">其它</label><span class="label-value">lua、sh、kml</span></li>
-                    </li>
-                </ul>
-            </div>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/font-awesome.min.css">
 
-            <div class="code info-unit">
-                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
-                <hr>
-                <div class="weixin">
-                    <img src="static/image/weixin.jpg" alt="">
+  </head>
+  <body>
+    <aside id="sidebar">
+      <nav id="tags">
+        <a href="/index.html" id="avatar"></a>
 
-                </div>
-            </div>
-          </div>
-        <div class="main">
-            <div class="education info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>沈阳航空工业学院1997-2001</h3>
-                        <p>
-                            计算机科学与应用：操作系统、数据结构、电子原理、编译原理、数据库
-                        </p>
-                    </li>
-					<li>
-                        <h3>南京航空航天大学2008-2012</h3>
-                        <p>
-                            软件工程：数据库、嵌入式、系统仿真
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="work info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>某单位</h3>
-                        <p>
-						系统仿真、航电仿真、飞行仿真、系统综合、验证、集成；
-						嵌入式实时系统编程、分布式仿真。
-                        </p>
-                    </li>
-                </ul class="experience-list">
-            </div>
-            <div class="project info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">项目</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>地面站仿真</h3>
-                        <p>
-                            把飞行仿真、航迹仿真、导航以及仪表显示、地图等乱七八糟的集成到一起,通过DDS（Data Distribution Service，数据分发服务）连接起来一通通信。
-							
-                         <br/>
-                        </p>
-                    </li>
-                    <li>
-                        <h3>android界面</h3>
-                        <p>
-                            试了试手，把MCDU、PFD、ND用java在android上试验了一下。
-                        </p>
-                    </li>
-                    <li>
-                        <h3>python助手</h3>
-                        <p>
-                           用python做了一些微薄的贡献，编程格式整理（把c++的注释"//"改成c语言注释"/* */";然后试着用pandas做了一些excel的统计整理
-                        </p>
-                    </li>
-                    <li>
-                        <h3>其它一些乱七八糟的</h3>
-                        <p>
-                            protobuf的移植、Gmap的修改以及一些小打小闹.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="trophy info-unit">
-                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>健美操比赛第二名</h3>
-                        <p>
-                            运动生涯的巅峰
-                        </p>
-                    </li> 
-                    <li>
-                        <h3>足球比赛亚军</h3>
-                        <p>
-                            基本上堪比国足了
-                        </p>
-                    </li> 
-					<li>
-                        <h3>王者印记</h3>
-                        <p>
-                            S17，S18，S19，S20赛季王者印记获得者，努力跟上小学生步伐
-                        </p>
-                    </li>  
-                    <li>
-                        <h3>未来可期</h3>
-                        <p>
-                            希望能有个啥能把这个空白填上
-                        </p>
-                    </li>                     
-            </div>
-            <div class="aboutme info-unit right-paragraph">
-                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
-                <hr>
-                <p>
-                    还是用曹老板的《步出夏门行·龟虽寿》中两句诗激励下自己：
-					     <h3>老骥伏枥，志在千里；</h3>
-						 <h3>烈士暮年，壮心不已。</h3>
-                
-					</p>
-            </div>
+        <ul id="tags__ul">
+          <li id="js-label1" class="tags__li tags-btn active">所有文章 <span class="post_count"></span></li>
+          <li id="js-label2" class="tags__li tags-btn">工作<span class="post_count"></span></li>
+          <li id="js-label3" class="tags__li tags-btn">简介<span class="post_count"></span></li>
+        </ul>
+
+        <div id="tags__bottom">
+          <a href="mailto:novohust@163.com" id="icon-email" class="tags-btn fontello"></a>
+          <a href="/rss.xml" id="icon-feed" class="tags-btn fontello"></a>
         </div>
-    </div>
-</body>
+      </nav> <!-- end #tags -->
 
+      <div id="posts-list">
+        <form action="" id="search-form">
+          <a href="/index.html" id="mobile-avatar"></a>
+          <!-- NOTE: input field is disabled by default -->
+          <input id="search-input" type="text" placeholder="Search..." disabled >
+        </form>
+
+        <nav id="pl__container">
+        
+          <a class="工作 pl__all" href="/%E5%B7%A5%E4%BD%9C/2015/08/17/%E6%B6%88%E6%81%AF%E4%B8%AD%E5%BF%83%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E4%B8%AD%E8%B8%A9%E7%9A%84%E5%87%A0%E4%B8%AA(%E5%B8%B8%E8%AF%86)%E5%9D%91.html"><span class="pl__circle"></span><span class="pl__title">消息中心开发过程中踩的几个(常识)坑</span><span class="pl__date">Aug 2015</span></a>
+        
+         
+          <a class="简介 pl__all" href="/简介/2020/11/11/sheldon.html"><span class="pl__circle"></span><span class="pl__title">我的个人简介</span><span class="pl__date">Nov 2020</span></a>
+        
+        </nav>
+      </div> <!-- end #posts-list -->
+    </aside> <!-- end #sidebar -->
+
+    <div id="post">
+      <div id="pjax">
+        <article id="post__content">
+  <h1 class="post__title">关于我</h1>
+<p>喜欢写代码，喜欢看代码，喜欢研究代码，别的都不喜欢，不喜欢，不喜欢 重要事情说三遍</p>
+<h1>关于这个博客</h1>
+<p>托管在 github，模板使用 <a href="https://github.com/P233/3-Jekyll" target="_blank">3-jekyll</a>。</p>
+<p>这里大部分是我平常总结的笔记</p>
+<p>博客使用的工具：</p>
+<ol>
+<li><a href="http://maxiang.info" target="_blank">马克飞象</a></li>
+<li><a href="https://github.com/P233/3-Jekyll" target="_blank">3-jekyll</a></li>
+<li>python</li>
+<li><a href="http://evernote.com" target="_blank">Evernote</a></li>
+</ol>
+</article> <!-- end #post__content -->
+      </div> <!-- end #pjax -->
+
+    </div> <!-- end #post -->
+
+    <button id="js-fullscreen"><span id="icon-arrow" class="fontello"></span></button>
+    <button id="js-toc"><span id="icon-list" class="fa fa-list-ul"></span></button>
+    <div id="post__toc">
+      <span id="post__toc-title">目录</span>
+      <ul id="post__toc-ul"></ul>
+    </div>
+
+    <script src="/assets/js/jquery-2.0.3.min.js"></script>
+    <script src="/assets/js/jquery.pjax.js"></script>
+    <script src="/assets/js/nprogress.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </body>
 </html>
